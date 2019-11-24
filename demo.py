@@ -27,6 +27,7 @@ print ("Multiplication" , multiplication(3,2))
 print ("division", division(3,2))
 print ("Exponential", exponential(3,2))
 
+
 print ('AREAS')
 print('Triangle1', area_triangle1(2, 4))  # 4
 print('Circle2', area_circle2(4))  #50.272
@@ -40,6 +41,9 @@ print("substraction of numbers" , substraction1(40, 50, 5)) #-15
 print('substraction of numbers' ,  substraction1(8)) #8
 print('multiplication of numbers' , multiplication1(2,2,2,2,2)) #32
 print('multiplication  of numbers' , multiplication1(2)) #2
+
+print('Triangle1', area_triangle1('a','b'))  # 4
+print ("Exponential", exponential('a','b'))
 
 
 
