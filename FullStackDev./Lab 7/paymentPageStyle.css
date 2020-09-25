@@ -1,0 +1,97 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+  padding: 2em;
+  background-color: #CCCCCC;;
+}
+
+#subMain {
+  padding: 1em;
+  background-color: #FFFFFF;
+}
+
+#cardInfo {
+  width: 100%;
+}
+
+#creditCardInfo {
+  display: inline-block;
+  width: 60%;
+  padding-right: 3em;
+}
+
+#orderSummary {
+  display: inline-block;
+  
+}
+
+#cardNumber {
+  padding: 0.6em 0;
+}
+#cardDate {
+  padding: 0.6em 0;
+  width: 100%;
+}
+#expiryMonthCon {
+  padding-right: 1em;
+  display: inline-block;
+}
+#expiryYearCon {
+  display: inline-block;
+}
+#ccv {
+  padding: 0.6em 0;
+}
+#expiryMonth {
+  display: block;
+}
+#expiryYear {
+  display: block;
+}
+
+th {
+  text-align: left;
+}
+td {
+  padding-left: 1em;
+}
+input{
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: 30px;
+  padding: 12px;
+  border: solid 1px ;
+  color: #adadad;
+}
+label{
+  color: #1d242c;
+  font-size: 14px;
+  line-height: 20px;
+}
+button{
+  width: 100%;
+  font-weight: bold;
+  background-color: #ffce00;
+  height: 40px;
+  cursor: pointer;
+}
+span{
+  font-size: small;
+}
+fieldset{
+  border: none;
+}
+#ccvInner{
+  width: 10em;
+}
+select{
+  width: 10em ;
+  height: 30px;
+
+}
+tr{
+  margin: 15px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <link href="paymentPageStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>Payment</h1>
+      </header>
+      <div id="subMain">
+        <section id="creditCardHeaderSection">
+          <h4>Credit Card</h4>
+          <hr />
+          <h4>Card Information</h4>
+        </section>
+        <section id="cardInfoSection">
+          <div id="cardInfo">
+            <div id="creditCardInfo">
+              <fieldset>
+                <form>
+                  <div id="cardNumber">
+                    <label for="creditCardNumber"> Credit Card Number </label>
+                    <input id="creditCardNumber" name="creditCardNumber" />
+                  </div>
+                  <div id="cardDate">
+                    <div id="expiryMonthCon">
+                      <label for="expiryMonth"> Expiry Month </label>
+                      <select id="expiryMonth">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div id="expiryYearCon">
+                      <label for="expiryYear"> Expiry Year </label>
+                      <select id="expiryYear">
+                        <option value="01">2020</option>
+                        <option value="02">2021</option>
+                        <option value="03">2022</option>
+                        <option value="04">2023</option>
+                        <option value="05">2024</option>
+                        <option value="06">2025</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div id="ccv">
+                    <label for="ccvInner"> CCV </label>
+                    <div>
+                      <input id="ccvInner" name="ccv" />
+                      <span>
+                        This 3 or 4 digit code is on the back or front of your
+                        card
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+            <div id="orderSummary">
+              <h3>Order Summary</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Product Subtotal</th>
+                    <td>$32.34</td>
+                  </tr>
+                  <tr>
+                    <th>Estimated Shipping</th>
+                    <td>$4.99</td>
+                  </tr>
+                  <tr>
+                    <th>Estimated Taxes</th>
+                    <td>$4.85</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr >
+                    <th>Estimated Total</th>
+                    <td>$42.18</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <button type="submit">Continue</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

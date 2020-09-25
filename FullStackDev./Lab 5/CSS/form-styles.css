@@ -1,0 +1,39 @@
+form{
+  border: solid;
+  background-color: blueviolet;
+  padding: 10px;
+  width: 50%;
+  height: 30%;
+}
+fieldset{
+  background-color: violet;
+
+}
+.legend-style{
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+  font-size: medium;
+
+}
+.input-style1{
+  background-color: lightgrey;
+  margin: 5px;
+  font-weight: bold;
+}
+.input-style2{
+  margin: 5px;
+  font-weight: bold;
+}
+.button{
+  border: outset;
+  background-color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 7em;
+  height: 3em;
+  margin: 5px;
+  font-weight: bold;
+}

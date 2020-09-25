@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <title>Article</title>
+  <link href="CSS/form-styles.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend class="legend-style">Order Form</legend>
+            <div>
+                <label for='Name'>Full Name:</label>
+                <input class="input-style2" type="text" id="Name" name="Name" placeholder="Enter your name"  required >
+            </div>
+            <div>
+                <label  for='Tel'>Telephone:</label>
+                <input class="input-style1"  type="tel" id="Tel" name="Tel" placeholder="Pattern: 1-234-567-8910"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+            </div>
+            <div>
+                <label  for="E-mail">E-mail Address:</label>
+                <input class="input-style2" type="email" id="E-mail" name="E-mail" placeholder="Enter your email address" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legend-style">Emulators</legend>
+            <label  for="Max">Quantity (Maximum 5):</label>
+            <input class="input-style1"  type="number" id="Max" max="5" min="1"  >
+            <div>
+                <select>
+                    <option value=""> --Please choose an option </option>
+                    <option value="Ataria">Ataria</option>
+                    <option value="Sega Genesis">Sega Genesis</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Play Station">Play Station</option>
+                    <option value="XBox">XBox</option>
+                </select>
+            </div>
+            
+    
+        </fieldset>
+        <button class="button" type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
