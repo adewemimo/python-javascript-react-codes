@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>HTML containing JavaScript Code</title>
+        <script>
+            function DisplayMessage(message){
+                if (message === null) {
+                    console.log("message is null")
+                }
+                else if (message === "") {
+                    console.log("message is empty")
+                }
+                else {
+                    console.log(message)
+                }
+            }
+
+            DisplayMessage(null);
+            DisplayMessage("");
+            DisplayMessage(false);
+            DisplayMessage("This is a test");
+            DisplayMessage("pizza!");
+            DisplayMessage("and wings!")
+
+
+        </script>
+
+    </head>
+    <body>
+        <p>
+            JavaScript Code - Lab 9 Exercise 2
+        </p>
+    </body>
+
+</html>
