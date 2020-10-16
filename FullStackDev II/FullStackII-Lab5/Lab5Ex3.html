@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ex 3</title>
+</head>
+<body>
+   
+    <div id="container">
+
+    </div>
+    <script>
+        // finction to create element and add text to the element. function takes two parameter Stings for elementtag and the text
+        const buildforHTML = function (elementTag, Text){
+            var mainDiv = document.querySelector("#container");
+    
+            var elementCreated = document.createElement(elementTag);
+            elementCreated.textContent = Text
+            
+            mainDiv.appendChild(elementCreated);
+
+        }
+
+        buildforHTML("p", "This is a paragraph");
+        buildforHTML("span", "This is a Span");
+        buildforHTML("h1", "This is a header");
+
+
+
+    
+    </script>
+</body>
+</html>

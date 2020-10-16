@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ex 1</title>
+</head>
+<body>
+ 
+  <div id="container">
+      <h1 class="first">This is a header</h1>
+      <div>this is a div tag</div>
+      <p class="main-para">this is a paragraph</p>
+      <p>this is a second paragraph<span>This is a nested tag</span></p>
+      <span class="last">this is a span <div>This is a nested div</div></span>
+  </div>
+
+  <script>
+      const displaySiblingElements = function () {
+          //Select the element with the class main-par
+          var mainElement = document.querySelector(".main-para");
+          console.log(mainElement);
+
+          // output the previous sibling element
+          var previousSiblingElement = mainElement.previousElementSibling;
+          console.log(previousSiblingElement);
+
+          //output the next sibling element
+          var nextSiblingElement = mainElement.nextElementSibling;
+          console.log(nextSiblingElement);
+
+
+      }
+      displaySiblingElements();
+   
+  </script>
+</body>
+</html>

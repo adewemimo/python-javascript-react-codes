@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ex 1</title>
+</head>
+<body>
+ 
+  <div id="container">
+      <h1 class="first">This is a header</h1>
+      <div>this is a div tag</div>
+      <p class="main-para">this is a paragraph</p>
+      <p>this is a second paragraph<span>This is a nested tag</span></p>
+      <span class="last">this is a span <div>This is a nested div</div></span>
+  </div>
+
+  <script>
+      const displayChildElements = function (){
+
+        // Select the container element
+        var containerElement = document.querySelector("#container");
+        console.log(containerElement);
+
+        // Output the container element child nodes
+        var containerChildElements = containerElement.children;
+        console.log(containerChildElements);
+
+        //output the first child node
+        var containerFirstChildNode = containerElement.firstChild;
+        console.log(containerFirstChildNode);
+
+        // output the first element child
+        var containerFirstElementChild = containerElement.firstElementChild;
+        console.log(containerFirstElementChild);
+
+        //output the last child node
+        var containerLastChildNode = containerElement.lastChild;
+        console.log(containerLastChildNode);
+
+        //output the last element child
+        var containerLastElementChild = containerElement.lastElementChild;
+        console.log(containerLastElementChild);
+
+      }
+      displayChildElements();
+   
+  </script>
+</body>
+</html>
