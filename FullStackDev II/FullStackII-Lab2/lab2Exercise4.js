@@ -1,3 +1,4 @@
+// function to read current date time for 10 times.
 const startClock = function(){
     do {
         for (i = 1; i <= 10; i++){

@@ -1,3 +1,4 @@
+// Function to find if a number is even or odd.
 function findOddOrEven(){
   for (i=0; i <= 10; i++){
     if (i%2 == 0){

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Auction Web Interface</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+      <div>
+        <h1>DApp - Auctioning Platform</h1>
+        <h2>Auction for Fundraising for a Social Cause</h2>
+        <div >
+           <button class="beneficiary">Beneficiary</button>
+          
+           <button class="regButton">Register Bidder</button> <br/>
+        </div>
+        <div>
+            <div>
+                <label for="itemId-uint256">Item Id</label>
+                <input type="text" id="itemId-uint256" class="itemId-uint256"/>
+                <label for="count-uint256">count</label>
+                <input type="text" id="count-uint256" class="count-uint256"/>
+                <button class="BidButton">Bid</button>
+            </div>
+            <div>
+                <button class="revealWinners">Reveal Winners</button>
+              </div>
+        </div>
+        <div>
+          <label for="items-uint256">Items</label>
+          <input type="text" id="items-uint256" class="items-uint256"/>
+          <button class="items">Get Items</button>
+          <label for="winners-uint256">Winners</label>
+          <input type="text" id="winners-uint256" class="winners-uint256"/>
+          <button class="winners">Get Winners</button>
+          <p>Note: use numbers 0,1,2 as input to reveal winners of the draw</p>
+        </div>
+        
+
+      </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" charset="utf-8"
+  type="text/javascript"></script>
+  <script src="Auction.js" type="text/javascript"></script>
+
+</html>

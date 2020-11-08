@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex 1</title>
+    <style>
+        .container-item {
+            background-color: lightcoral;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"> 
+        <p>This is the default paragraph</p>
+    </div>
+  
+    <br/>
+    <input id="inpt1" type="button" value="Add Element" >
+    <input id="inpt2" type="button" value="Remove Element" >
+
+    <script>
+
+        var divContainer = document.querySelector("#container");
+        // Mouse event (click) to add paragragh element
+        var inputElement1 = document.querySelector("#inpt1");
+
+        inputElement1.addEventListener("click", function(event){
+            
+
+            var elementCreated = document.createElement("p");
+            elementCreated.textContent = "This is a paragraph";
+            elementCreated.className = "container-item";
+            
+            divContainer.appendChild(elementCreated);
+        });
+
+        // Mouse event (click) to remove paragraph element
+
+        var inputElement2 = document.querySelector("#inpt2");
+
+        inputElement2.addEventListener("click", function(event){
+            if (divContainer.lastElementChild){
+            divContainer.removeChild(divContainer.lastElementChild)};
+    });
+
+
+
+
+
+
+  </script> 
+</body>
+</html>

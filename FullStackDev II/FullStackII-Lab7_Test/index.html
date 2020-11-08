@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <link href="styles/timerStyle.css" rel="stylesheet">
+</head>
+<body >
+    <div class="container">
+        <table  id="timerTable">
+            <tr>
+                <td>
+                    <span>Start Time:</span>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input class="container-item" id="txtStartTime" type="text"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>End Time:</span>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input class="container-item" id="txtEndTime" type="text"  readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnStart" type="button">Start</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnStop" type="button">Stop</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btnReset" type="button">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="timer" class ="timerLogDiv"> 
+    </div>
+    <script src="scripts/test.js">
+    </script>
+
+</body>
