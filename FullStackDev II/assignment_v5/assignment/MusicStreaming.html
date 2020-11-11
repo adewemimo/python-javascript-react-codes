@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style\Styling.css" />
+    <title>Music Streaming</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <fieldset>
+                <legend> Search Your Favourite Music </legend>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12">
+                        <form>
+                            <label for="ArtisName">Artist:</label>
+                            <input type="text" id="artistName" name="artistName" placeholder="Enter the Artist Name">
+                            <label for="songTitle">Song:</label>
+                            <input type="text" id="songTitle" name="songTitle" placeholder="Enter the Song Title">
+                            <label for="albumTitle">Album:</label>
+                            <input type="text" id="albumTitle" name="albumTitle" placeholder="Enter the Album Name">
+                            <label for="selectGenre">Genre:</label>
+                            <select id="selectGenre">
+                                <option value=""> Select a Genre </option>
+                                <option value="Soul"> Soul </option>
+                                <option value="Pop"> Pop </option>
+                                <option value="Rap"> Rap </option>
+                                <option value="Gospel"> Gospel </option>
+                                <option value="Vocal"> Vocal </option>
+                            </select>
+                            <button id="btnSearch" type="button">Search</button>
+                            <button id="btnReset" type="button">Reset</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" id="favouriteContainerLabel">
+
+                </div>
+                <div class="row" id="favoriteContainer"></div>
+                <div class="row">
+                    <h3 class="col-md-12 py-4">Search Results</h3>
+                </div>
+                <div class="row" id="resultRow">
+                </div>
+
+            </fieldset>
+        </div>
+    </div>
+    <script src="js\MusicStreaming.js"></script>
+</body>
+
+</html>
