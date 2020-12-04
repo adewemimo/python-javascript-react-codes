@@ -1,0 +1,16 @@
+{
+  "name": "Lab2-Transaction-Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transactionGenerator.js",
+  "dependencies": {
+    "ethers": "^5.0.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
