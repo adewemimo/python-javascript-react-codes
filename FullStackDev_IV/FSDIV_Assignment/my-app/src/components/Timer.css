@@ -1,0 +1,11 @@
+.timer-container {
+    width: 32rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.formControl {
+    margin: 1rem 0;
+}
+button {
+    margin: 0.2rem 0;
+}

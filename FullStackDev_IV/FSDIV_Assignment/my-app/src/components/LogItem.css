@@ -1,0 +1,6 @@
+li {
+    list-style: circle;
+    margin: 0.2rem 0;
+    border: 1px solid #444;
+    padding: 0.4rem;
+}

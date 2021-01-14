@@ -1,0 +1,36 @@
+pragma solidity ^0.5.0;
+
+contract TipJar {
+    address public owner; //correction done to make variable owner start with small letter
+   
+    
+    constructor() public {
+        owner = msg.sender; 
+    }
+    
+    function receive() external payable {
+        // receive ether from account
+    }
+    
+    modifier onlyOwner() {
+        require(owner == msg.sender, "Only owner can withdrawal and transfer ownership to another address");
+        _;
+        
+    }
+    
+    function withdrawal () public onlyOwner {
+        
+        
+        //check contract balance after receiving ether from account
+        uint contractBalance = address(this).balance;
+        
+        //transfer ether to owner of contract
+        msg.sender.transfer(contractBalance);
+      
+    }
+    
+    function transferOwnership(address newOwner) public onlyOwner {
+        owner = newOwner;
+    }
+}
+

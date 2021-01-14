@@ -1,0 +1,37 @@
+pragma solidity ^0.5.0;
+
+contract PersonalBank {
+    //Boolean to check if messageHash has been used.
+    mapping(bytes32 => bool) usedCashCheque;
+    
+    address owner;
+    
+    constructor() public payable {
+        owner = msg.sender;
+    }
+    
+    function() external payable {
+    }
+    
+    function cashCheque(address payable to, uint256 amount,
+                        bytes32 r, bytes32 s, uint8 v, bytes32 nonce)
+                public {
+                    
+        bytes32 messageHash = keccak256(abi.encodePacked(to, amount, nonce, address(this)));
+        
+        // To Make sure messageHash has not been used (prevent replay attack)
+        require(!usedCashCheque[messageHash], "This cheque has already been used");
+        
+        //record that messageHash has been seen
+        usedCashCheque[messageHash] = true;
+        
+        
+        bytes32 messageHash2 = keccak256(abi.encodePacked(
+            "\x19Ethereum Signed Message:\n32", messageHash
+        ));
+        
+        require(ecrecover(messageHash2, v, r, s) == owner, "bad signature");
+        
+        to.transfer(amount);
+    }
+}

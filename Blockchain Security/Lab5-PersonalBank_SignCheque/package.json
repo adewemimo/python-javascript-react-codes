@@ -1,0 +1,17 @@
+{
+  "name": "Lab5-PersonalBank_SignCheque",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sign-cheque.js",
+  "dependencies": {
+    "ether": "0.0.9",
+    "ethers": "^5.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
